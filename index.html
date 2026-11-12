@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal homepage of a first-year IT student at Inha University in Tashkent.">
+  <title>MADINA · IT Student</title>
+  <script>
+    try {
+      const theme = localStorage.getItem('homepage-theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top"><img class="profile-photo" src="photo.jpg" alt="Portrait of Madina" width="44" height="44"> MADINA</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#projects">Projects</a>
+        <a href="#network">Network detective</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+        <span class="theme-icon" aria-hidden="true">☾</span> Dark mode
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" id="top" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> First-year IT student</p>
+        <h1 id="intro">Hi, I’m <strong>MADINA</strong>.</h1>
+        <p>I study Information Technology at Inha University in Tashkent. This is where I share what I’m learning and building.</p>
+        <a class="primary-link" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-window">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <div class="code-mark">&lt;/&gt;</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About me</h2>
+      <p>I’m in my first year at Inha University in Tashkent, where I’m building a foundation in IT. This homepage is a place to document my progress as I move from coursework to hands-on projects.</p>
+    </section>
+
+    <section id="courses" class="section">
+      <h2>My courses</h2>
+      <p class="section-note">Sample topics for now.</p>
+      <ul class="course-list">
+        <li><h3>Programming fundamentals</h3><p>Variables, loops, functions, and problem-solving.</p></li>
+        <li><h3>Discrete mathematics</h3><p>Logic, sets, and the math behind computing.</p></li>
+        <li><h3>Web development</h3><p>Page structure, styling, and browser interactions.</p></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <article class="project">
+        <div>
+          <h3>Personal homepage</h3>
+          <p>A responsive site with light and dark themes.</p>
+        </div>
+        <ul class="tags" aria-label="Technologies">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="network" class="section" aria-labelledby="network-title">
+      <h2 id="network-title">Network detective</h2>
+      <p>My ISP is [ASN name], my router was made by [maker], and inha.uz is [n] hops away.</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>I’m open to connecting with other students and hearing about project ideas.</p>
+      <p class="section-note">Contact email coming soon.</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>MADINA · Tashkent, Uzbekistan</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
